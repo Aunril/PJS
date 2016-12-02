@@ -1,0 +1,44 @@
+
+body{
+	background-color : #A6C1E8;
+}
+
+.bla{
+  padding-top: 100px;
+}
+
+.Vitrine{
+
+	background-color: transparent;
+	color:black;
+	text-align: center;
+ 	/*padding: 2em;
+ 	margin-top: 3em;
+  padding-left: 100px: */*  
+}
+
+#Vitrine1 {
+  background: url(../images/1.jpg) no-repeat;
+  background-size: auto 100%;  
+  width: 450px;
+  height: 230px;/*>ne pas modifier*/
+ /* float : right;*/
+ border: solid 3px white; 
+}
+
+#Vitrine2 {
+  background: url(../images/AmeVitrine2.jpg) no-repeat;
+  background-size: auto 100%; 
+  width: 250px;
+  height: 230px; /*>ne pas modifier*/  
+  float : left; 
+  margin-left: 9.5em;
+  border: solid 3px white;
+}
+
+footer{   /*Pour que le footer se positionne en bas de page*/
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
