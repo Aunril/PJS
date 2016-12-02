@@ -1,0 +1,84 @@
+/*.page{
+    background-image: url(../images/allée.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+ }
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }*/
+
+
+/*#bgvid {
+    position: relative;
+    right: 0;
+    left:0;
+}*/
+
+.page{
+	position: relative;
+}
+
+.carte{
+	margin-left: auto;
+	margin-right: auto;
+	width: 810px;
+	position: absolute;
+	left: 27%;
+	top: 5%;
+}
+
+.carte h2{
+	background-color: white;
+	color: black;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 800px;
+	font-family: Century Gothic,sans-serif;	
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 5px;
+	font-weight: 100;
+	text-shadow: -2px 2px 4px #999;
+	color: #323232;
+}
+
+.éléments{
+	position: absolute;
+	margin-top: 40em;
+}
+
+.présentation{
+ 	border: solid 2px white;
+	background-color: rgba(216, 191, 216, 0.8);
+	margin-top: 3em;
+	width: 50em;
+}
+
+.texte{
+	width: 65%;
+	float: left;
+}
+
+.vignette{
+	width: 200px;
+	border: 3px solid white;
+	float:right;
+}
+
+footer{
+	margin-top: -10px;
+}
+
+
+
+/*video #bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(../videos/ParadiseBeach.jpg) no-repeat;
+  background-size: cover;
+}

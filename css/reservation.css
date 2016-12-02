@@ -1,0 +1,45 @@
+
+body{
+	background-color : #A6C1E8;
+}
+
+.choix{
+
+	background-color: transparent;
+	color:black;
+	text-align: center;
+ 	padding: 2em;
+ 	margin-top: 3em;
+}
+
+.choix button{
+	margin-top: 50px;
+}
+
+
+#Hotel, #Circuit{
+  -webkit-box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
+  -moz-box-shadow: 4px -4px 3px 0px rgba(156,150,15631);
+  box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
+  border-radius: 50%;
+  width: 250px;
+  height: 230px;
+  display: inline-block;
+}
+
+#Hotel {
+  background: url(../images/hotelL.jpg) no-repeat;
+  background-size: auto 100%;
+}
+
+#Circuit {
+  background: url(../images/Avion.jpg) no-repeat;
+  background-size: auto 100%;
+}
+
+footer{   /*Pour que le footer se positionne en bas de page*/
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
