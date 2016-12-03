@@ -18,7 +18,7 @@ body{
 }
 
 #Vitrine1 {
-  background: url(../images/1.jpg) no-repeat;
+  background: url(../images/AmeriqueNord/1.jpg) no-repeat;
   background-size: auto 100%;  
   width: 450px;
   height: 230px;/*>ne pas modifier*/
@@ -27,7 +27,7 @@ body{
 }
 
 #Vitrine2 {
-  background: url(../images/AmeVitrine2.jpg) no-repeat;
+  background: url(../images/AmeriqueNord/AmeVitrine2.jpg) no-repeat;
   background-size: auto 100%; 
   width: 250px;
   height: 230px; /*>ne pas modifier*/  

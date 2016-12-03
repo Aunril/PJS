@@ -1,6 +1,6 @@
 
 .accueil{
-    background-image: url(../images/accueil.jpg);
+    background-image: url(../images/accueil/accueil.jpg);
 	background-size:100% 100%;
     background-repeat: no-repeat;
  }
@@ -49,7 +49,7 @@
   -moz-box-shadow: 4px -4px 3px 0px rgba(156,150,15631);
   box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
   border-radius: 50%;
-  background: url(../images/italie1.jpg);
+  background: url(../images/accueil/italie1.jpg);
   background-repeat: no-repeat;
   background-size: auto 100%;
   width: 250px;
@@ -107,26 +107,26 @@
 }
 
 .slide1{
-	background: url(../images/Philipinnes.jpg) no-repeat center center;
+	background: url(../images/accueil/Philipinnes.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .slide2{
-	background: url(../images/Hawaii.jpeg) no-repeat center center;
+	background: url(../images/accueil/Hawaii.jpeg) no-repeat center center;
 	background-size: cover;
 }
 
 .slide3{
-	background: url(../images/K2.jpg) no-repeat center center;
+	background: url(../images/accueil/K2.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .slide4{
-	background: url(../images/Paris.jpg) no-repeat center center;
+	background: url(../images/accueil/Paris.jpg) no-repeat center center;
 	background-size: cover;
 }
 
 .slide5{
-	background: url(../images/Egypte.jpeg) no-repeat center center;
+	background: url(../images/accueil/Egypte.jpeg) no-repeat center center;
 	background-size: cover;
 }

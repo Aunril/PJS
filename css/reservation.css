@@ -28,12 +28,12 @@ body{
 }
 
 #Hotel {
-  background: url(../images/hotelL.jpg) no-repeat;
+  background: url(../images/reservation/hotelL.jpg) no-repeat;
   background-size: auto 100%;
 }
 
 #Circuit {
-  background: url(../images/Avion.jpg) no-repeat;
+  background: url(../images/reservation/Avion.jpg) no-repeat;
   background-size: auto 100%;
 }
 

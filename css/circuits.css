@@ -1,23 +1,6 @@
-/*.page{
-    background-image: url(../images/allée.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
- }
-
-    @media (min-width: 1080px) {
-      .page {
-        min-height: 54em;      }
-    }*/
-
-
-/*#bgvid {
-    position: relative;
-    right: 0;
-    left:0;
-}*/
-
 .page{
 	position: relative;
+	min-height: 100%;
 }
 
 .carte{
@@ -26,7 +9,7 @@
 	width: 810px;
 	position: absolute;
 	left: 27%;
-	top: 5%;
+	top: 2%;
 }
 
 .carte h2{
@@ -49,44 +32,127 @@
 .éléments{
 	position: absolute;
 	margin-top: 40em;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.présentationPremière{
+	width: 42em;
+	height: auto;
+	color:#2B6CA3;
+	font-family: Century Gothic,sans-serif;
 }
 
 .présentation{
-	background-color: rgba(216, 191, 216, 0.8);
 	margin-top: 2em;
-	width: 30em;
-	height: 124px;
+	width: 42em;
+	height: auto;
+	color:#2B6CA3;
+	font-family: Century Gothic,sans-serif;
 }
 
-.annoncesDroites{
-	margin-left: 40px;
+.premiere{
+	margin-top: -1em;
 }
+
+.derniere{
+	margin-bottom: 8em;
+}
+
+.gauche{
+	margin-left: 20em;
+}
+
+.vignette{
+	width: 25%;
+	border: 9px solid white;
+	float: right;
+}
+
+
+.texte{
+	float: left;
+	width: 75%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding-left: 15px;
+	padding-bottom: 1px;
+}
+
 
 .texte h4{
-	font-size: 17px;
+	font-size: 16px;
+
 }
 
 .texte h2{
 	font-size: 23px;
+	text-shadow: -2px 2px 4px #999;
 }
 
-.vignette{
-	padding: 0;
-	border: 9px solid white;
-	margin-top: 2em;
-	float: left;
+
+.btn-circle {
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: #A6C1E8;
+  border: solid 3px white;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: -12px;
+  color: white;
 }
+
+.btn-circle:hover{
+	cursor: pointer;
+	background-color: white;
+	transition: background-color 100ms linear;
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 
 footer{
-	margin-top: -10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 
+    @media (max-width: 1500px) and (min-width: 1300px) {
+    	.gauche{margin-left: 10em;}
+    }
 
-/*video #bgvid {
-  position: fixed; right: 0; bottom: 0;
-  min-width: 100%; min-height: 100%;
-  width: auto; height: auto; z-index: -100;
-  background: url(../videos/ParadiseBeach.jpg) no-repeat;
-  background-size: cover;
-}
+    @media (max-width: 1300px) and (min-width: 1200px) {
+    	.gauche{margin-left: 2em;}
+    	.carte{ left: 18%;}
+    	#bgvid { display: none; }
+    	html { background: url(../images/circuits/bgCircuits.png) #000 no-repeat center center fixed; }   /*Supprime le fond vidéo selon la taille de l'écran*/
+    }
+
+    @media (max-width: 1200px){
+    	.gauche{margin-left: 0;}
+    	.présentationPremière{margin-top: 2em; margin-left: 20em;}
+    	.présentation{margin-top: 2em; margin-left: 20em;}
+    	.carte{ left: 18%;}
+    	#bgvid { display: none; }
+    	html { background: url(../images/circuits/bgCircuits.png) #000 no-repeat center center fixed; }   /*Supprime le fond vidéo selon la taille de l'écran*/
+    }
+
+    @media(max-width: 980px){
+    	.carte{ left: 5%;}
+    	.btn-circle{display: none};
+    	.gauche{margin-left: 0;}
+    	.présentationPremière{margin-top: 2em; margin-left: 10em;}
+    	.présentation{margin-top: 0em; margin-left: 10em;}
+    }
