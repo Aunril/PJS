@@ -13,7 +13,7 @@
 }
 
 .carte h2{
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.8);
 	color: black;
 	text-align: center;
 	margin-bottom: 0;
@@ -28,6 +28,11 @@
 	text-shadow: -2px 2px 4px #999;
 	color: #323232;
 }
+
+#world{
+	margin-top: -24.7px;
+}
+
 
 .éléments{
 	position: absolute;
@@ -129,8 +134,8 @@ footer{
 }
 
 
-    @media (max-width: 1500px) and (min-width: 1300px) {
-    	.gauche{margin-left: 10em;}
+    @media (min-width: 1700px){
+    	.gauche{margin-left: 27em;}
     }
 
     @media (max-width: 1300px) and (min-width: 1200px) {
