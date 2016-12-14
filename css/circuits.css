@@ -1,163 +1,126 @@
-.page{
-	position: relative;
-	min-height: 100%;
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
-.carte{
-	margin-left: auto;
-	margin-right: auto;
-	width: 810px;
-	position: absolute;
-	left: 27%;
-	top: 2%;
+body{
+    background-color : #A6C1E8;
+ }
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+.titre{
+	text-align : center;
+	background-color : white;
+	height: 60px;
 }
-
-.carte h2{
-	background-color: rgba(255, 255, 255, 0.8);
-	color: black;
-	text-align: center;
-	margin-bottom: 0;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	width: 800px;
-	font-family: Century Gothic,sans-serif;	
-	text-transform: uppercase;
-	font-size: 2em;
-	letter-spacing: 5px;
-	font-weight: 100;
-	text-shadow: -2px 2px 4px #999;
-	color: #323232;
-}
-
-#world{
-	margin-top: -24.7px;
-}
-
-
-.éléments{
-	position: absolute;
-	margin-top: 40em;
-	margin-left: auto;
-	margin-right: auto;
-	width: auto;
-}
-
-.présentationPremière{
-	width: 42em;
-	height: auto;
-	color:#2B6CA3;
-	font-family: Century Gothic,sans-serif;
-}
-
+	
 .présentation{
-	margin-top: 2em;
-	width: 42em;
-	height: auto;
-	color:#2B6CA3;
-	font-family: Century Gothic,sans-serif;
-}
-
-.premiere{
-	margin-top: -1em;
-}
-
-.derniere{
-	margin-bottom: 8em;
-}
-
-.gauche{
-	margin-left: 20em;
+ 	border: solid 2px white;
+	background-color: rgba(216, 191, 216, 0.8);
+	margin-top: 3em;
 }
 
 .vignette{
-	width: 25%;
-	border: 9px solid white;
-	float: right;
+	width: 200px;
+	border: 3px solid white;
 }
 
+.separateur{
+	height: 40px;
+	background-color: #A6C1E8;
+}
 
 .texte{
-	float: left;
-	width: 75%;
-	background-color: rgba(255, 255, 255, 0.8);
-	padding-left: 15px;
-	padding-bottom: 1px;
+	margin-top : -60px;
 }
 
-
-.texte h4{
-	font-size: 16px;
-
+.titre h2{
+	padding-top : 14px;
 }
 
-.texte h2{
-	font-size: 23px;
-	text-shadow: -2px 2px 4px #999;
+h2{
+	color : #2b689c;
+		font-size : 2vw;
 }
 
-
-.btn-circle {
-  padding: 5px 8px;
-  font-size: 12px;
-  border-radius: 40px;
-  background-color: #A6C1E8;
-  border: solid 3px white;
-  position: absolute;
-  margin-top: 45px;
-  margin-left: -12px;
-  color: white;
+hr{
+	width : 95%;
+	height: 8px;
+	border-top : 0.5px solid #8cd2cd;
 }
 
-.btn-circle:hover{
-	cursor: pointer;
-	background-color: white;
-	transition: background-color 100ms linear;
+p{
+	font-family : Georgia;
+	color : #305589;
+	font-size : 1vw;
 }
 
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+.cadre{
+	float : left;
+	margin-top : -440px;
+	padding-top : 2%;
+	padding-left : 5%;
+	width : 30%;
+	margin-left : 70%;
+	border: 0.5px solid #8cd2cd;
 }
 
-
-footer{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+.page{
+	background-color : white !important;
+	width : 52%;
+	margin-left : 25%;
+	padding-top : 3%;
+	padding-bottom : 3%;
+	padding-left : 3%;
+	padding-right : 3%;
 }
 
+.diapo{
+	width : 65%;
+	height : 300px;
+}
 
-    @media (min-width: 1700px){
-    	.gauche{margin-left: 27em;}
-    }
+.struct{
+	margin-top : 40px;
+}
+.slides{
+	background-size : cover;
+}
 
-    @media (max-width: 1300px) and (min-width: 1200px) {
-    	.gauche{margin-left: 2em;}
-    	.carte{ left: 18%;}
-    	#bgvid { display: none; }
-    	html { background: url(../images/circuits/bgCircuits.png) #000 no-repeat center center fixed; }   /*Supprime le fond vidéo selon la taille de l'écran*/
-    }
+.miniature{
+	width : 50px;
+	height : 30px;
+}
 
-    @media (max-width: 1200px){
-    	.gauche{margin-left: 0;}
-    	.présentationPremière{margin-top: 2em; margin-left: 20em;}
-    	.présentation{margin-top: 2em; margin-left: 20em;}
-    	.carte{ left: 18%;}
-    	#bgvid { display: none; }
-    	html { background: url(../images/circuits/bgCircuits.png) #000 no-repeat center center fixed; }   /*Supprime le fond vidéo selon la taille de l'écran*/
-    }
+.miniatures{
+	margin-left : 12%;
+}
 
-    @media(max-width: 980px){
-    	.carte{ left: 5%;}
-    	.btn-circle{display: none};
-    	.gauche{margin-left: 0;}
-    	.présentationPremière{margin-top: 2em; margin-left: 10em;}
-    	.présentation{margin-top: 0em; margin-left: 10em;}
-    }
+.bouton {
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width : 75%;
+	height : 35px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #8cd2cd; 
+    color: white; 
+	margin-top : 5%;
+	margin-bottom : 5%;
+}
+
+.bouton:hover {
+    background-color: #2b689c;
+    color: white;
+}

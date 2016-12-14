@@ -9,8 +9,9 @@ header{
 #entête{
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width: 700px;
   text-align: center;
+  padding-right: 110px;
 }
 
 h1,h3{
@@ -31,6 +32,10 @@ h3{
 	padding-bottom: 20px;
 }
 
+#entête .imageGauche{
+	padding-right: 10px;
+}
+
 .imageGauche{
 	float:left;
 	margin-top: 20px;
@@ -38,7 +43,7 @@ h3{
 
 .menu{
 	background-color: #A6C1E8;	/*Pas besoin de mettre le margin-top*/
-	padding-left: 100px;
+	padding-left: 30px;
 }
 
 
