@@ -137,13 +137,15 @@ footer{
 	/*Essayer d'utiliser les hidden en fonction de la taille de l'écran*/
 
 
-    @media (min-width: 1700px){
+    @media (min-width: 1301px){
     	/*.gauche{margin-left: 27em;}*/
+    	html{overflow-x: hidden;}
     }
 
     @media (max-width: 1300px) and (min-width: 1200px) {
     	/*.gauche{margin-left: 2em;}*/
     	/*.carte{ left: 18%;}*/
+    	html{overflow-x: hidden;}
     	#bgvid { display: none; }
     	body { background-image: url(../images/choixCircuits/bgCircuits.png);
 				background-attachment:fixed;
@@ -156,6 +158,7 @@ footer{
     	.présentation{margin-top: 2em; margin-left: 20em;}
     	/*.carte{ left: 18%;}*/
     	#bgvid { display: none; }
+    	html{overflow-x: hidden;}
     	body { background-image: url(../images/choixCircuits/bgCircuits.png);
 			   background-attachment:fixed;
 			   background-size:cover;}   /*Supprime le fond vidéo selon la taille de l'écran*/
@@ -167,6 +170,7 @@ footer{
 
     @media(max-width: 980px){
     	/*.carte{ left: 5%;}*/
+    	html{overflow-x: visible;}
     	.btn-circle{display: none};
     	.gauche{margin-left: 0;}
     	.présentationPremière{margin-top: 2em; margin-left: 10em;}

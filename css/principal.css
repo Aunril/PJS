@@ -46,7 +46,6 @@ h3{
 	padding-left: 30px;
 }
 
-
 li{
 	color:#2B6CA3;
 	font-family: Spinnaker;	
@@ -149,10 +148,63 @@ li:hover{
 }
 
 
-    @media (max-width: 480px) {
-      .menu {
-        border: solid 2px #1C3353;}
-      #entête{
+
+
+	@media (min-width: 768px) and (max-width: 979px){
+      .navbar-header {
+      	padding-left: 150px;
+		}
+	}
+
+
+    @media screen and (max-width: 767px) {
+      .navbar-header {
+		top: 15px;
+		right: 10px;
+    	position: fixed;
+    	width: 250px;
+    	z-index: 1000;	/*pour que le menu soit visible au premier plan*/
+	}
+
+	.menu button {	
+		cursor: pointer;
+		color: #FCDD44;
+		font-size: 30px;
+		position: fixed;
+		top: 15px;
+		right: 1px;
+		padding: 6px 15px;
+		z-index: 1000;
+		float: right;
+
+	}
+
+	.nav li a {
+		color: white;
+		background-color: rgba(15, 15, 15, 0.7);
+	    display: block;
+	   
+	}
+
+	.nav li a:hover {
+		color: yellow;
+		background-color: rgba(15, 15, 15, 0.7);
+	}
+
+
+      .nav ul{
+      	position: fixed;
+      	float: none;
+      	top: 69px;
+	    right: 55px;
+		z-index: 1000;
+      }
+
+    }
+
+	@media (max-width: 480px){
+
+	  #entête{
       	margin-left: 0;
       	width: 300px;
       }
@@ -160,4 +212,14 @@ li:hover{
       	width:30%;
       	height: 30%;
       }
-    }
+
+	}
+
+	@media (max-width: 700px) and (min-width: 481px){
+
+	  #entête{
+      	margin-left: 0;
+      	width: 600px;
+      }
+
+	}
