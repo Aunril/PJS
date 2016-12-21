@@ -1,16 +1,47 @@
-/*html{
-  overflow-x: hidden;
+
+
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
 }
 
 body{
-	background-color : #A6C1E8;
+    background-color : #A6C1E8;
+ }
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+
+.page{
+	background-color: white;
+	padding: 30px;
+	padding-top: 40px;
+	border: 1px solid black;
+	border-radius: 5px;
 }
-*/
 
-/*
-footer{   Pour que le footer se positionne en bas de page
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}*/
 
+.center_div{
+    margin: 0 auto;
+    width:500px; /* value of your choice which suits your alignment */
+    margin-bottom: 50px;
+}
+
+textarea {
+    max-width: 426px; 
+}
+
+@media (max-width: 600px){
+	.center_div{
+	    margin: 0 auto;
+	    width:250px /* value of your choice which suits your alignment */
+	}
+
+	textarea {
+    max-width: 176px; 
+	}
+}

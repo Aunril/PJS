@@ -40,9 +40,15 @@ body{
   background-size: auto 100%;
 }
 
-footer{   /*Pour que le footer se positionne en bas de page*/
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+
+@media (min-width: 1400px){
+
+  footer{   /*Pour que le footer se positionne en bas de page*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
 }
+
 

@@ -9,7 +9,9 @@
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
  <!--    <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/principal.css" rel="stylesheet">
-    <link href="css/reservation.css" rel="stylesheet">
+    <link href="css/formulaireCircuits.css" rel="stylesheet">
+
+
 
 
     <link rel="stylesheet/less" type="text/css" href="css/principal.less" />
@@ -66,24 +68,114 @@
 
     </div>
 
-    <div class='container-fluid'>
+<div class="container-fluid center_div">
+        <div class='page'>
+   
+            <form>
 
-        <footer class='row'>
-             <div class='col-md-12 contact'>
-                 <div id="réseauxSociaux">
-                     <div class="imageGauche facebook"><a href="http://facebook.fr"></a></div>
-                     <div class="imageGauche twitter"><a href="http://twitter.fr"></a></div>
-                     <div class="imageGauche google"><a href="https://plus.google.com/?hl=fr"></a></div>
-                     <div class="imageGauche pinterest"><a href="https://fr.pinterest.com/"></a></div>
-                </div>
-            </div>   
-        </footer>
-    </div>
+            <legend>Réservation</legend>
+
+              <div class="form-group">
+                <input type="text" class="form-control" id="nom" required="true" placeholder="*Nom">
+              </div>              
+              <div class="form-group">
+                <input type="text" class="form-control" id="prenom" required="true" placeholder="*Prénom">
+              </div>
+              <div class="form-group">
+                <label for="number-input" >Nombre de personnes</label>
+                <input class="form-control" type="number" value="1" id="number-input">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="telephone" placeholder="Téléphone">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" aria-describedby="emailHelp" id="email" required="true" placeholder="*Email">
+                <small id="emailHelp" class="form-text text-muted">Votre adresse ne sera pas communiquée.</small>
+              </div>
+
+              <div class="form-group"> <!-- Date input -->
+                <label class="control-label" for="date">Départ</label>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" required="true" type="text"/>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleSelect1">Votre circuit</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>Angleterre</option>
+                  <option>Argentine</option>
+                  <option>Australie</option>
+                  <option>Brésil</option>
+                  <option>Canada</option>
+                  <option>Afrique du Sud</option>
+                  <option>Egypte</option>
+                  <option>France</option>
+                  <option>Inde</option>
+                  <option>Italie</option>
+                  <option>Japon</option>
+                  <option>Madagascar</option>
+                  <option>Nouvelle-Zélande</option>
+                  <option>Pérou</option>
+                  <option>Polynésie</option>
+                  <option>Thaïlande</option>
+                  <option>Etats-Unis Côte Est</option>
+                  <option>Etats-Unis Côte Ouest</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleTextarea">Des questions ou des précisions ?</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+
+        </div>
+</div>
+
+
+
+    <footer>
+        <div class='col-md-12 contact'>
+            <div id="réseauxSociaux">
+                <div class="imageGauche facebook"><a href="http://facebook.fr"></a></div>
+                    <div class="imageGauche twitter"><a href="http://twitter.fr"></a></div>
+                    <div class="imageGauche google"><a href="https://plus.google.com/?hl=fr"></a></div>
+                    <div class="imageGauche pinterest"><a href="https://fr.pinterest.com/"></a></div>
+            </div>
+        </div>   
+    </footer>
+
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Partie concernant le DatePicker -->
+    <!--  jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
 </body>
 </html>
 
