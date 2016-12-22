@@ -40,18 +40,35 @@ body{
 }
 
 .titre h2{
+	font-family: Baskerville;
+	font-style: italic;
 	padding-top : 14px;
 }
 
 h2{
+	font-family: Baskerville;
 	color : #2b689c;
-		font-size : 2vw;
+	font-size : 2vw;
 }
 
 hr{
-	width : 95%;
+	width : 100%;
 	height: 8px;
 	border-top : 0.5px solid #8cd2cd;
+}
+
+h4{
+
+	color : #1C3353;
+	font-size : 1vw;
+}
+
+.itinéraire{
+	float: left;
+
+	margin-top: -2%;
+	width: 10vw;	
+	border: 2px solid red;
 }
 
 p{
@@ -62,12 +79,47 @@ p{
 
 .cadre{
 	float : left;
-	margin-top : -440px;
-	padding-top : 2%;
+	margin-top : -443px;
+	padding-top : 3%;
+	padding-bottom: 2%;
 	padding-left : 5%;
 	width : 30%;
 	margin-left : 70%;
-	border: 0.5px solid #8cd2cd;
+	border: 1px solid #8cd2cd;
+	border-radius: 5px;
+}
+
+.fleche{
+	float: left;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+
+.ligne_verticalePremiere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;
+    height:7vw;
+}
+
+.ligne_verticaleDerniere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;	
+    height:4vw;
+}
+
+.ligne_verticaleTitre{
+	margin-top: 2%;
+	margin-right: 5%;
+	float: left;
+	border-left:1px solid #8cd2cd;	
+	width:5px;
+	height: 3vw;
 }
 
 .page{
@@ -112,7 +164,7 @@ p{
 	width : 75%;
 	height : 35px;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     cursor: pointer;
     background-color: #8cd2cd; 
     color: white; 
@@ -124,3 +176,8 @@ p{
     background-color: #2b689c;
     color: white;
 }
+
+.error{		/*Sans faire un bouton avant, le bouton réserver ne veut pas fonctionner*/
+	color: white;
+}
+

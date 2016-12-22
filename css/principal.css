@@ -47,6 +47,7 @@ h3{
 
 .navbar{
 	background-color: #A6C1E8;	
+	margin-bottom: -10px;
 }
 	
 .navbar-nav {		/*Pour centrer le menu*/
@@ -209,7 +210,9 @@ h3{
 		z-index: 1000;
       }
 
-
+    .navbar{
+    	margin-bottom: 0;
+    }
 
     }
 
