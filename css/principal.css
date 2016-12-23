@@ -219,12 +219,16 @@ h3{
 	@media (max-width: 480px){
 
 	  #entête{
-      	margin-left: 0;
-      	width: 300px;
+	  	padding-left: 20%;
+	  	font-size: 20px;
+      	width: 380px;
       }
-      .imageGauche img{
-      	width:30%;
-      	height: 30%;
+      #entête .imageGauche img{
+      	display: none;
+      }
+
+      html{
+      	overflow-x: hidden;
       }
 
 	}
@@ -232,7 +236,6 @@ h3{
 	@media (max-width: 700px) and (min-width: 481px){
 
 	  #entête{
-      	margin-left: 0;
       	width: 600px;
       }
 

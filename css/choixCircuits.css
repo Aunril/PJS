@@ -3,6 +3,8 @@
 	min-height: 100%;
 }
 
+/*La carte*/
+
 embed{
 	width: 800px;
 	height: 500px;
@@ -37,10 +39,101 @@ embed{
 }
 
 
+/*Menu du sprite*/
+
+.spriteMenu{
+	margin-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+.showImg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/choixCircuits/sprites.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.choix li ul {
+  display: none; /*Ne faire apparaitre qu'après un hover*/
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/*Second niveau de liens*/
+
+.choix li ul li {
+  border: 1px solid white;
+  background-color: #AAADEC;
+  display: block;
+  width: 200px;
+  height: 43px;
+  line-height: 35px;
+  padding: 5px;
+  position: relative;
+}
+
+.choix li:hover ul {	/*faire apparaitre le bloc*/
+  display: block;
+}
+
+.choix a {
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+/*  Pied  */
+
+.choix li.pied {
+  background-position: -103px -1px;
+}
+
+.choix li.pied:hover {
+  background-position: -103px -52px;
+}
+
+
+/* Vélo */
+.choix li.velo {
+  background-position: -1px -1px;
+}
+
+.choix li.velo:hover {
+  background-position: -1px -52px;
+}
+
+/*  Auto  */
+.choix li.auto {
+  background-position: -154px -1px;
+}
+
+.choix li.auto:hover {
+  background-position: -154px -52px;
+}
+
+
+/*  Avion */
+
+.choix li.avion {
+  background-position: -52px -1px;
+}
+
+.choix li.avion:hover {
+  background-position: -52px -52px;
+}
+
+
+/*Les vignettes descriptives*/
+
 .éléments{
 	margin-top: 2em;
-/*	margin-left: auto;
-	margin-right: auto;*/
 }
 
 .présentationPremière{
@@ -118,6 +211,9 @@ embed{
 	transition: background-color 100ms linear;
 }
 
+
+/*Arrière plan de la page*/
+
 video { 
     position: fixed;
     top: 50%;
@@ -131,6 +227,8 @@ video {
 }
 
 
+/*bas de page*/
+
 footer{
 	position: fixed;
 	bottom: 0;
@@ -138,7 +236,8 @@ footer{
 }
 
 
-	/*Essayer d'utiliser les hidden en fonction de la taille de l'écran*/
+
+	/*Responsive design*/
 
 
     @media (min-width: 1301px){

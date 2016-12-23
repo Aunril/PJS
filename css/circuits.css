@@ -63,13 +63,13 @@ h4{
 	font-size : 1vw;
 }
 
-.itinéraire{
+/*.itinéraire{
 	float: left;
 
 	margin-top: -2%;
 	width: 10vw;	
 	border: 2px solid red;
-}
+}*/
 
 p{
 	font-family : Georgia;
@@ -154,7 +154,6 @@ p{
 }
 
 .bouton {
-	background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     text-align: center;
@@ -180,4 +179,3 @@ p{
 .error{		/*Sans faire un bouton avant, le bouton réserver ne veut pas fonctionner*/
 	color: white;
 }
-
