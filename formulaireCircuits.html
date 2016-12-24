@@ -28,7 +28,7 @@
         <header class='row'>
             <div class='col-md-12'>
                 <div id='entête'>
-                    <p class="imageGauche"><img src="images/entete/logo.png"  alt="logo de l'agence" width="120px" /></p>
+                    <p class="imageGauche"><img src="images/entete/logo.png"  alt="logo de l'agence" width="120" /></p>
                     <h1>Excellence Voyages</h1>
                     <h3>Voyages prestigieux pour clients prestigieux</h3>
                 </div>
@@ -37,7 +37,7 @@
 
         <div class='row menu'>
             <div class='col-md-12'>
-                <nav class="navbar" role="navigation">
+                <nav class="navbar">
                      <div class="container-fluid">
                         <div class="navbar-header">
                             <button type = "button" class = "navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle = "collapse" data-target = "#example-navbar-collapse">
@@ -73,13 +73,13 @@
    
             <form>
 
-            <legend>Réservation</legend>
+            <fieldset><legend>Réservation</legend></fieldset>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="nom" required="true" placeholder="*Nom">
+                <input type="text" class="form-control" id="nom" required placeholder="*Nom">
               </div>              
               <div class="form-group">
-                <input type="text" class="form-control" id="prenom" required="true" placeholder="*Prénom">
+                <input type="text" class="form-control" id="prenom" required placeholder="*Prénom">
               </div>
               <div class="form-group">
                 <label for="number-input" >Nombre de personnes</label>
@@ -89,13 +89,13 @@
                 <input type="text" class="form-control" id="telephone" placeholder="Téléphone">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" aria-describedby="emailHelp" id="email" required="true" placeholder="*Email">
+                <input type="email" class="form-control" aria-describedby="emailHelp" id="email" required placeholder="*Email">
                 <small id="emailHelp" class="form-text text-muted">Votre adresse ne sera pas communiquée.</small>
               </div>
 
               <div class="form-group"> <!-- Date input -->
                 <label class="date-label" for="date">Départ</label>
-                <input class="form-control center" id="date" name="date" placeholder="MM/DD/YYY" required="true" type="text"/>
+                <input class="form-control center" id="date" name="date" placeholder="MM/DD/YYY" required type="text"/>
               </div>
 
               <div class="form-group">

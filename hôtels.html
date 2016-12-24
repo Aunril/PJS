@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="fr">  <!-- Demande d'indication de la part du W3C -->
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
  <!--    <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/principal.css" rel="stylesheet">
-    <link href="css/hôtels.css" rel="stylesheet">
+    <link href="css/listeHôtels.css" rel="stylesheet">
 
 
     <link rel="stylesheet/less" type="text/css" href="css/principal.less" />
@@ -25,7 +25,7 @@
         <header class='row'>
             <div class='col-md-12'>
                 <div id='entête'>
-                    <p class="imageGauche"><img src="images/entete/logo.png"  alt="logo de l'agence" width="120px" /></p>
+                    <p class="imageGauche"><img src="images/entete/logo.png"  alt="logo de l'agence" width="120" /></p>
                     <h1>Excellence Voyages</h1>
                     <h3>Voyages prestigieux pour clients prestigieux</h3>
                 </div>
@@ -34,7 +34,7 @@
 
         <div class='row menu'>
             <div class='col-md-12'>
-                <nav class="navbar" role="navigation">
+                <nav class="navbar">
                      <div class="container-fluid">
                         <div class="navbar-header">
                             <button type = "button" class = "navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle = "collapse" data-target = "#example-navbar-collapse">
@@ -72,21 +72,20 @@
 
 			<h2>Nos Chambres</h2>
 			<hr>
-			</br>
 
             <form class="form-inline">
 
               <div class="form-group"> 
-                <input class="form-control center" id="date" name="date" placeholder="Départ" type="text"/>
+                <input class="form-control center" id="dateDepart" name="dateDepart" placeholder="Départ" type="text"/>
               </div>
               <div class="form-group"> 
-                <input class="form-control center" id="date" name="date" placeholder="Arrivée" type="text"/>
+                <input class="form-control center" id="dateArrivee" name="dateArrivee" placeholder="Arrivée" type="text"/>
               </div>
               <div class="form-group">
-                <input class="form-control" type="number" min="0" id="number-input" placeholder="Nombre d'adultes">
+                <input class="form-control" type="number" min="0" id="number-inputAdultes" placeholder="Nombre d'adultes">
               </div>
               <div class="form-group">
-                <input class="form-control" type="number" min="0" id="number-input" placeholder="Nombre d'enfants">
+                <input class="form-control" type="number" min="0" id="number-inputEnfants" placeholder="Nombre d'enfants">
               </div>
 
               <button type="submit" class="btn bouton">Rechercher</button>
@@ -98,12 +97,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
-							<a href="#" class="thumbnail">
-						      <img src="images/test.jpg" alt="photo hôtel">
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/suiteJapon.html" class="thumbnail">
+						      <img src="images/hotels/japon.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Suite Deluxe Japon</h4>
 							<p> Superbement situées en angle, les Suites Deluxe disposent de larges baies panoramiques tout le long des murs du séjour et 
 							de la salle à ...</p>
@@ -120,7 +119,7 @@
 						<div class="prix col-md-3 text-center">
 							<p>à partir de</p>
 							<h2> $1117</h2>
-							<a class="btn bouton" href="../formulaireCircuits.html" role="button">Plus d'infos</a>
+							<a class="btn bouton" href="hotels/suiteJapon.html" role="button">Plus d'infos</a>
 						</div>
 					</div>
 				</div>
@@ -128,12 +127,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t1.jpg" alt="photo hôtel">
+						      <img src="images/hotels/tahiti.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Hôtel Intercontinental Tahiti Resort 4</h4>
 							<p> Situé à Tahiti, île mythique de la Polynésie française, dans l'Archipel de la Société, l'hôtel Intercontinental Tahiti Resort est un véritable refuge de ...</p>
 							<nav>
@@ -157,12 +156,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t2.jpg" alt="photo hôtel">
+						      <img src="images/hotels/hotel-luxe-12.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Suite</h4>
 							<p> Cette élégante Suite Junior décorée dans le style des années 1940 et 1950 offre un grand espace ouvert avec une large salle de bain entourée ...</p>
 							<nav>
@@ -187,12 +186,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t3.jpg" alt="photo hôtel">
+						      <img src="images/hotels/cambridge.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Cambridge Suites Hotel</h4>
 							<p> Dotée d'un spacieux séjour, de 2 télévisions, d'un petit réfrigérateur et d'un four à micro-ondes. Les appels locaux sont gratuits. Du café et du ...</p>
 							<nav>
@@ -217,12 +216,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t4.jpg" alt="photo hôtel">
+						      <img src="images/hotels/hotel-luxe-11.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Brasil Suite</h4>
 							<p> Situé à 12 km de l'aéroport Dumont et à 28 km de celui de Galéao, l'hôtel Fasano de Rio fait face à la légendaire plage d'Ipanéma. Il offre l'avantage ...</p>
 							<nav>
@@ -246,12 +245,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t5.jpg" alt="photo hôtel">
+						      <img src="images/hotels/hotel-luxe-1.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Ambassador Suite</h4>
 							<p> 75 m2 - Vue : Ville - Localisation : 3ème au 9ème étage - Baignoire et douche dans toutes les chambres ...</p>
 							<nav>
@@ -276,12 +275,12 @@
 				<div class="row">
 					<div class="proposition">
 						<hr>
-						<div class="col-xs-6 col-md-3">
+						<div class="col-xs-6 col-md-4">
 							<a href="#" class="thumbnail">
-						      <img src="images/t6.jpg" alt="photo hôtel">
+						      <img src="images/hotels/palazzo.jpg" alt="photo hôtel">
 						    </a>
 						</div>
-						<div class="description col-md-6">
+						<div class="description col-md-5">
 							<h4>Suite Royal</h4>
 							<p> 233 m2 - Vue : Vue sur les jardins privés - Localisation : Étage noble du Palazzo Della Gherardesca - Baignoire et douche dans toutes les ...</p>
 							<nav>

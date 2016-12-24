@@ -12,23 +12,82 @@ body{
       .page {
         min-height: 54em;      }
     }
-
+	
 
 .separateur{
 	height: 40px;
 	background-color: #A6C1E8;
 }
 
+.texte{
+	margin-top : -60px;
+}
+
+
 h2{
-    font-family:Lucida Sans Unicode;
+	font-family: Baskerville;
 	color : #2b689c;
-/*	font-size : 2vw;*/
+	font-size : 2vw;
 }
 
 hr{
 	width : 100%;
 	height: 8px;
 	border-top : 0.5px solid #8cd2cd;
+}
+
+h4{
+
+	color : #1C3353;
+	font-size : 1vw;
+}
+
+p{
+	font-family : Georgia;
+	color : #305589;
+	font-size : 1vw;
+}
+
+.cadre{
+	padding-top : 3%;
+	padding-bottom: 2%;
+	padding-left : 5%;
+	margin-left : 5%;
+	border: 1px solid #8cd2cd;
+	border-radius: 5px;
+}
+
+.fleche{
+	float: left;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+
+.ligne_verticalePremiere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;
+    height:7vw;
+}
+
+.ligne_verticaleDerniere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;	
+    height:4vw;
+}
+
+.ligne_verticaleTitre{
+	margin-top: 2%;
+	margin-right: 5%;
+	float: left;
+	border-left:1px solid #8cd2cd;	
+	width:5px;
+	height: 3vw;
 }
 
 .page{
@@ -38,50 +97,29 @@ hr{
 	margin-right: auto;
 	padding-top : 3%;
 	padding-bottom : 3%;
-	padding-left : 4%;
-	padding-right : 2%;
+	padding-left : 3%;
+	padding-right : 3%;
 }
 
-
-/* Barre de recherche */
-
-form{
-	margin-top: -7%;
+.diapo{
+	width : 65%;
+	height : 400px;
 }
 
-/*changer la couleur du placeholder*/
-
-.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #2d3236;
+.struct{
+	margin-top : 40px;
 }
-.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: #2d3236;
-   opacity:  1;
-}
-.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: #2d3236;
-   opacity:  1;
-}
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: #2d3236;
+.slides{
+	background-size : cover;
 }
 
-.form-control{
-	border: solid 1.5px #8cd2cd;
-	border-radius: 2px;
-	box-shadow: none;
-	margin-right: -5px;
-    font-family:Lucida Sans Unicode;
+.miniature{
+	width : 50px;
+	height : 30px;
 }
 
-.form-control:hover{
-	border: solid 1.5px #8cd2cd;
-	box-shadow: none;
-}
-
-.form-control:focus{
-	border: solid 1.5px #8cd2cd;
-	box-shadow: none;
+.miniatures{
+	margin-left : 12%;
 }
 
 .bouton {
@@ -91,7 +129,8 @@ form{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-	width : 160px;
+	width : 75%;
+	height : 35px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.2s;
     cursor: pointer;
@@ -102,33 +141,7 @@ form{
 }
 
 .bouton:hover {
-    background-color: #77b0ac;
+    background-color: #2b689c;
     color: white;
 }
 
-
-/*Descriptions des hôtels*/
-
-p{
-	color : #26436c;
-}
-
-.page li{
-
-	color : #26436c;
-}
-
-.description h4{
-
-	font-size: 20px;
-	letter-spacing: -0.5px;
-	font-family:Lucida Sans Unicode;
-	font-weight: bold;
-	margin-bottom: 15px;
-	color: #305589;
-}
-
-.prix{
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
