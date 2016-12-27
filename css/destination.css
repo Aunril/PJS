@@ -1,44 +1,241 @@
+/*Le fond correspondant à chaque continent*/
 
-body{
-	background-color : #A6C1E8;
+.contenantAmNord{
+    background-image: url(../images/destinations/AmNord/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
-.bla{
-  padding-top: 100px;
+.contenantAmSud{
+    background-image: url(../images/destinations/AmSud/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
-.Vitrine{
-
-	background-color: transparent;
-	color:black;
-	text-align: center;
- 	/*padding: 2em;
- 	margin-top: 3em;
-  padding-left: 100px: */*  
+.contenantEurope{
+    background-image: url(../images/destinations/Europe/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
-#Vitrine1 {
-  background: url(../images/AmeriqueNord/1.jpg) no-repeat;
-  background-size: auto 100%;  
-  width: 450px;
-  height: 230px;/*>ne pas modifier*/
- /* float : right;*/
- border: solid 3px white; 
+.contenantAfrique{
+    background-image: url(../images/destinations/Afrique/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
-#Vitrine2 {
-  background: url(../images/AmeriqueNord/AmeVitrine2.jpg) no-repeat;
-  background-size: auto 100%; 
-  width: 250px;
-  height: 230px; /*>ne pas modifier*/  
-  float : left; 
-  margin-left: 9.5em;
-  border: solid 3px white;
+.contenantAsie{
+    background-image: url(../images/destinations/Asie/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 
-footer{   /*Pour que le footer se positionne en bas de page*/
+.contenantOcéanie{
+    background-image: url(../images/destinations/Océanie/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*La page de destinations*/
+
+.page{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+
+.partieGauche{
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+.partieDroite{
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  padding: 2px;
+}
+
+.bande{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 2em;
+
+}
+
+.bande h2{
+  font-family: Century Gothic,sans-serif; 
+  font-size: 25px;
+  text-shadow: -2px 2px 4px #999;
+  color: #323232;
+  padding-bottom: 15px;
+}
+
+
+.retour{
+  float: right;
+  margin-top: 2%;
+}
+
+.retour a{
+  text-decoration: none;
+  color: #323232;
+}
+
+
+/*Seconde partie de la page*/
+
+.destinations{
+  margin-top: 50px;
+}
+
+.image{
+  -webkit-box-shadow: 4px -4px 3px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px -4px 3px 0px rgba(0,0,0.5);
+  box-shadow: 4px -4px 3px 0px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 280px;
+  height: 260px;
+  display: inline-block;
+  cursor:  pointer;
+  z-index: 1000;
+  margin-left: 10px;
+}
+
+.image a{
+  display: block;
+  width: 280px;   
+  height: 260px;
+}
+
+.description{
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
+  min-height: 611px;
+}
+
+.description h2{
+  font-family: Century Gothic,sans-serif; 
+  font-size: 24px;
+  text-shadow: -2px 2px 4px #999;
+  color:#2B6CA3;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.description p{
+  font-family: Century Gothic,sans-serif; 
+  font-size: 18px;
+  color:#2B6CA3;
+}
+
+.bouton{
+  background-color: #2B6CA3;
+  color: white;
+  width: 70px;
+  border-radius: 70%;
+  margin-left: 30%;
+  margin-bottom: 10%;
   position: absolute;
-  bottom: 0px;
-  width: 100%;
+  bottom: 0;
 }
 
+.bouton:hover{
+  color: white;
+  background-color: #1C3353;
+  transition: 0.5s;
+}
+
+
+/*Responsive Design*/
+
+    @media (max-width: 1400px) {
+
+      .page{
+          margin-bottom: 30px;
+          width: 85%;
+      }
+
+      html{
+        overflow-x: hidden;
+      }
+
+
+    @media (max-width: 1000px) {
+
+      .description{
+          min-height: 800px;
+      }
+
+      .image{
+         width: 200px;
+        height: 180px;       
+      }
+
+      .bouton{
+        margin-left: 20%;
+      }
+
+    }
+
+     @media screen and (max-width: 767px) {
+
+      .container-fluid{
+        background-image: none;
+        background-color : #A6C1E8;
+      }
+
+      .choix{
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+      }
+
+      .description{
+        min-height: 550px;
+      }
+
+      .bouton{
+        margin-left:0;
+        width: 90%;
+        border-radius: 0;
+      }
+
+      .image{
+
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+     }  
+
+     @media screen and (max-width: 400px) {
+      .description{
+        min-height: 650px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      .image{
+        display: none;
+      }
+
+      .banniere{
+        display: none;
+      }
+
+      .retour{
+       float: none;
+      }
+
+     }
