@@ -54,8 +54,8 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">More <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">A propos</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="apropos.html">A propos</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                 </li>
                             </ul>
@@ -67,18 +67,32 @@
     
     </div>
 
-    <div class='container-fluid '>
+    <div class='container-fluid contenant'>
         <div class='row page'>
 
-            <div class="row titre">
-                <h2>Nous contacter</h2>
-                <hr>
+            <div class="row">
+                <div class="titre col-md-12">
+                    <h2>Nous contacter</h2>
+                    <hr>
+                </div>
             </div>
 
             <div class="row">
-                <div class="réseauxPage col-md-5 col-xs-5">
+                <div class="PartieGauche col-md-6 col-xs-6">
+                    <img src="images/more/telephone.png" alt="telephone de l'agence" width="400" id="telephone">
+
+                    <div class="réseauxPage col-md-10 col-xs-10">
+                        <div class="centerRéseaux">
+                             <div class="col-md-2 social premier"><a href="http://facebook.fr"><img src="images/more/facebook.png" alt="facebook" width="30"></a></div>
+                             <div class="col-md-2 social"><a href="http://twitter.fr"><img src="images/more/twitter.png" alt="facebook" width="30"></a></div>
+                             <div class="col-md-2 social"><a href="https://plus.google.com/?hl=fr"><img src="images/more/google.png" alt="facebook" width="30"></a></div>
+                             <div class="col-md-2 social"><a href="https://fr.pinterest.com/"><img src="images/more/pinterest.png" alt="facebook" width="30"></a></div>   
+                        </div>
+                    </div>
+
                 </div>
-                <div class="formulaire col-md-7 col-xs-7">
+
+                <div class="formulaire col-md-6 col-xs-6">
 
                     <form>
 
@@ -86,15 +100,15 @@
                         <input type="text" class="form-control" id="nom" required placeholder="Nom">
                       </div>     
                       <div class="form-group">
-                        <input type="email" class="form-control" aria-describedby="emailHelp" id="email" required placeholder="Email">
+                        <input type="email" class="form-control" id="email" required placeholder="Email">
                       </div>         
                       <div class="form-group">
                         <input type="text" class="form-control" id="sujet" required placeholder="Sujet">
                       </div>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="message" required placeholder="Message">
+                        <textarea class="form-control" id="exampleTextarea" placeholder="Message" rows="3"></textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary">Envoyer</button>
+                      <button type="submit" class="btn">Envoyer</button>
 
                     </form>
 
