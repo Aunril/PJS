@@ -7,7 +7,7 @@
 }
 
 .contenantAmSud{
-    background-image: url(../images/destinations/AmSud/fond.jpg);
+    background-image: url(../images/destinations/AmSud/fond.jpeg);
     background-size:100% 100%;
     background-repeat: no-repeat;
 }
@@ -63,14 +63,14 @@
 }
 
 .bande{
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 2em;
 
 }
 
 .bande h2{
   font-family: Century Gothic,sans-serif; 
-  font-size: 25px;
+  font-size: 23px;
   text-shadow: -2px 2px 4px #999;
   color: #323232;
   padding-bottom: 15px;
@@ -79,7 +79,7 @@
 
 .retour{
   float: right;
-  margin-top: 2%;
+  margin-top: 1.5%;
 }
 
 .retour a{
@@ -114,7 +114,7 @@
 }
 
 .description{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 25px;
   margin-bottom: 40px;
   margin-top: -60px;
@@ -186,7 +186,7 @@
 
     }
 
-     @media screen and (max-width: 767px) {
+     @media screen and (max-width: 800px) {
 
       .container-fluid{
         background-image: none;
@@ -219,11 +219,12 @@
 
      }  
 
-     @media screen and (max-width: 400px) {
+     @media screen and (max-width: 420px) {
       .description{
         min-height: 650px;
         padding: 10px;
         margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
 
       .image{

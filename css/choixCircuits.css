@@ -206,6 +206,9 @@ embed{
 	transition: background-color 100ms linear;
 }
 
+a:hover{
+  text-decoration: none;
+}
 
 /*Arrière plan de la page*/
 
@@ -236,13 +239,11 @@ footer{
 
 
     @media (min-width: 1301px){
-    	/*.gauche{margin-left: 27em;}*/
     	html{overflow-x: hidden;}
     }
 
+
     @media (max-width: 1300px) and (min-width: 1200px) {
-    	/*.gauche{margin-left: 2em;}*/
-    	/*.carte{ left: 18%;}*/
     	html{overflow-x: hidden;}
     	#bgvid { display: none; }
     	body { background-image: url(../images/choixCircuits/bgCircuits.png);
@@ -254,7 +255,6 @@ footer{
     	.gauche{margin-left: 0;}
     	.présentationPremière{margin-top: 2em; margin-left: 20em;}
     	.présentation{margin-top: 2em; margin-left: 20em;}
-    	/*.carte{ left: 18%;}*/
     	#bgvid { display: none; }
     	html{overflow-x: hidden;}
     	body { background-image: url(../images/choixCircuits/bgCircuits.png);
@@ -267,7 +267,6 @@ footer{
 	}
 
     @media(max-width: 980px){
-    	/*.carte{ left: 5%;}*/
     	.btn-circle{display: none};
     	.gauche{margin-left: 0;}
     	.présentationPremière{margin-top: 2em; margin-left: 10em;}
@@ -312,6 +311,6 @@ footer{
 
     	.présentationPremière{margin-left:0; width: 40%; height: 40%;}
     	.présentation{margin-left:0; width: 40%; height: 40%;}
-    	.vignette{width: 22%; height: 22%;}
+    	.vignette{display: none;}
 
 	}

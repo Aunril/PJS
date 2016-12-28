@@ -71,6 +71,7 @@ p{
 	padding-bottom : 3%;
 	padding-left : 3%;
 	padding-right : 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*formulaire et cadre de prix*/
@@ -271,5 +272,17 @@ form{
 			width : 200px;
 			height : 120px;
 		}	
+
+		.page{
+			width: 90%;
+		}
+
+		.section p{
+			font-size: 10px;
+		}
+
+		.section h4{
+			font-size: 12px;
+		}
 
      }

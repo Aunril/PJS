@@ -1,6 +1,3 @@
-
-
-
 .contenant{
     background-image: url(../images/more/contact1.jpg);
     background-size:100% 100%;
@@ -19,13 +16,13 @@
         min-height: 54em;      }
     }
 
-button{
+form button{
   float: right;
   background-color: rgb(203,52,101);
   color: white;
 }
 
-button:hover{
+form button:hover{
   background-color: rgb(211,86,126);
   box-shadow: 2px 2px 5px ;
 }
