@@ -18,8 +18,8 @@ body{
 	background-color: white;
 	padding: 20px;
 	padding-top: 30px;
-	border: 1px solid black;
 	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -46,6 +46,10 @@ legend{
 
 label{
 	color:#2B6CA3;
+}
+
+.btn{
+	margin-top: 30px;
 }
 
 @media (max-width: 600px){
