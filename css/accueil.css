@@ -14,7 +14,6 @@ html{
     }
 
 .annonce{
-	border: 2px solid white;
 	background-color: white;
 	color:black;
 	text-align: center;
@@ -24,7 +23,7 @@ html{
 }
 
 .annonce h2{
-	font-family: Century Gothic,sans-serif;	
+	font-family: "Century Gothic",sans-serif;	
 	text-transform: uppercase;
 	font-size: 2em;
 	letter-spacing: 5px;
@@ -35,21 +34,19 @@ html{
 }
 
 .annonce h5{
-	font-family: Century Gothic,sans-serif;	
+	font-family: "Century Gothic",sans-serif;	
 	color: #B0B0B0;
 	font-style: italic;
 	padding-bottom: 15px;
 }
 
 .annonce h4{
-	font-family: Century Gothic,sans-serif;	
+	font-family: "Century Gothic",sans-serif;	
 	color: #323232;
 	padding-bottom: 15px;
 }
 
 .CoupCoeur {
-  -webkit-box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
-  -moz-box-shadow: 4px -4px 3px 0px rgba(156,150,15631);
   box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
   border-radius: 50%;
   background: url(../images/accueil/italie1.jpg);

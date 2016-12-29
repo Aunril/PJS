@@ -103,7 +103,6 @@ p{
     font-size: 16px;
 	width : 75%;
 	height : 35px;
-    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.2s;
     cursor: pointer;
     background-color: #8cd2cd; 
@@ -137,7 +136,7 @@ p{
 	border-radius: 2px;
 	box-shadow: none;
 	margin: 0;
-    font-family:Lucida Sans Unicode;
+    font-family:"Lucida Sans Unicode";
 }
 
 .form-group{

@@ -21,8 +21,6 @@ body{
 
 
 #Hotel, #Circuit{
-  -webkit-box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
-  -moz-box-shadow: 4px -4px 3px 0px rgba(156,150,15631);
   box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
   border-radius: 50%;
   width: 250px;
