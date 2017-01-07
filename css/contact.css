@@ -9,7 +9,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
-}
+  
+}  
 
     @media (min-width: 1080px) {
       .page {
@@ -85,9 +86,19 @@ hr{
       }
 
     }
-
+	
+	@media(max-width:1080px){
+		.page{
+			padding-bottom: 30%;
+		}
+		
+		.titre{
+			padding-bottom: 30%;
+		}
+	}
+	
     @media (max-width: 990px) {
-    
+	
       .réseauxPage{
         display: none;
       }
@@ -118,4 +129,4 @@ hr{
           margin-left: auto;
         }
 
-     }    
+     }  

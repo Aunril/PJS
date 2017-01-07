@@ -39,7 +39,7 @@ body{
 }
 
 
-@media (min-width: 1400px){
+@media (min-width: 980px){
 
   footer{   /*Pour que le footer se positionne en bas de page*/
     position: absolute;

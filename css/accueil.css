@@ -134,10 +134,12 @@ html{
 
 /*Responsive Design*/
 
-	@media (max-width: 980px){
+	@media (max-width: 1200px){
 		.annonce{
+			margin-bottom: 15px;		
+			
 
-			margin-bottom: 15px;
+			
 		}	
 	}
 

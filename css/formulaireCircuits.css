@@ -55,10 +55,21 @@ label{
 @media (max-width: 600px){
 	.center_div{
 	    margin: 0 auto;
-	    width:250px /* value of your choice which suits your alignment */
+	    width:450px;
+		margin-bottom: 40px;
+	}
+	
+	body{
+		overflow-x: hidden;
 	}
 
 	textarea {
     max-width: 176px; 
+	}
+}
+
+@media (max-width: 500px){
+	.center_div{
+	    width:250px;
 	}
 }
